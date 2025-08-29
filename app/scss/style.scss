@@ -206,3 +206,66 @@ body {
     align-self: start;
   }
 }
+
+.new-collection {
+  background-image: url(../images/top-decor.svg);
+  background-repeat: no-repeat;
+  background-position:70px -45%;
+  &__inner {
+    padding: 150px 0;
+    display: flex;
+  }
+
+  &__content {
+    padding: 75px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 492px;
+  }
+
+  &__title {
+    @extend %lora-400;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    color: vars.$color-text-muted;
+  }
+
+  &__link {
+    margin-top: auto;
+    font-size: 16px;
+    color: vars.$color-text-muted;
+    padding: 10px 60px;
+    border: 1px solid vars.$bg-primary;
+    align-self: start;
+  }
+
+  &__img {
+    padding-top: 75px;
+  }
+
+  &__box {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__box-img {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    left: -75px;
+    max-width: 404px;
+  }
+
+  &__caption {
+    max-width: 290px;
+    color: vars.$color-text-muted;
+    padding: 40px;
+  }
+}
+
