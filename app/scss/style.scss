@@ -88,7 +88,8 @@ body {
   &__menu-link {
     border-bottom: 1px solid vars.$color-text-muted;
   }
-  &__logo{
+
+  &__logo {
     margin-right: -30px;
     margin-left: -30px;
   }
@@ -180,6 +181,7 @@ body {
   min-height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -210,7 +212,8 @@ body {
 .new-collection {
   background-image: url(../images/top-decor.svg);
   background-repeat: no-repeat;
-  background-position:70px -45%;
+  background-position: 70px -45%;
+
   &__inner {
     padding: 150px 0;
     display: flex;
@@ -269,3 +272,69 @@ body {
   }
 }
 
+.join-us {
+  background-color: vars.$bg-primary;
+
+  &__inner {
+    padding: 0 35px;
+    display: flex;
+    gap: 40px;
+  }
+
+  &__img {
+    max-width: 540px;
+  }
+
+  &__box {
+    padding: 40px 0;
+    max-width: 540px;
+  }
+
+  &__title {
+    font-size: 45px;
+    @extend %lora-400;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 30px;
+    @extend %lora-400;
+    color: vars.$color-primary;
+    margin-bottom: 40px;
+  }
+
+  &__form {
+    margin-bottom: 0;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid vars.$color-text-muted;
+    background-color: transparent;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color: vars.$color-text-muted;
+    @extend %opensans-400;
+  }
+
+  &__btn {
+    display: block;
+    border: none;
+    cursor: pointer;
+    background-color: vars.$color-accent;
+    border-radius: 3px;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+
+  &__form-text {
+    font-size: 11px;
+    color: vars.$color-primary;
+  }
+}
