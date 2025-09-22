@@ -345,13 +345,15 @@ body {
 .designer {
   padding: 150px 0 210px;
   position: relative;
-  &__img-decor{
+
+  &__img-decor {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: -225px;
     z-index: 5;
   }
+
   &__inner {
     padding: 0 40px;
     display: flex;
@@ -407,19 +409,20 @@ body {
 
 .advantages {
   background-color: vars.$bg-primary;
+
   &__wrapper {
     padding: 64px 0 34px;
     display: flex;
     position: relative;
   }
 
-  &__img{
+  &__img {
     position: absolute;
     bottom: 0;
     left: 40px;
   }
 
-  &__img-decor{
+  &__img-decor {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -446,7 +449,8 @@ body {
     margin-bottom: 30px;
     padding-left: 50px;
     position: relative;
-    &::before{
+
+    &::before {
       content: '';
       position: absolute;
       width: 30px;
@@ -454,5 +458,68 @@ body {
       left: 0;
       background-image: url(../images/advantages-items-decor.svg);
     }
+  }
+}
+
+.our-blog {
+  padding: 150px 0 0;
+
+  &__inner {
+    padding: 0 40px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 280px 330px;
+    gap: 20px;
+    background-image: url(../images/our-blog-img-decor.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+
+  &__title {
+    @extend %lora-400;
+    font-size: 45px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 16px;
+    margin-bottom: 50px;
+    color: vars.$color-text-muted;
+    max-width: 400px;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 10px 90px;
+    color: vars.$color-text-muted;
+    border: 1px solid vars.$color-text-muted;
+  }
+
+  &__box-right {
+    grid-row: span 2;
+    align-self: center;
+    margin-top: 35px;
+  }
+
+  &__box-img {
+    margin-bottom: 20px;
+  }
+
+  &__box-link {
+    display: inline-block;
+    margin-bottom: 5px;
+    @extend %lora-400;
+    color: vars.$color-text-muted;
+  }
+
+  &__box-date {
+    font-size: 16px;
+    @extend %opensans-300;
+  }
+
+  &__box-bottom {
+    grid-column: span 2;
+    margin-left: auto;
   }
 }
