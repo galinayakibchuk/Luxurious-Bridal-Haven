@@ -294,6 +294,7 @@ body {
     font-size: 45px;
     @extend %lora-400;
     margin-bottom: 20px;
+    text-transform: uppercase;
   }
 
   &__text {
@@ -331,6 +332,8 @@ body {
     padding: 12px;
     margin-bottom: 20px;
     margin-top: 40px;
+    position: relative;
+    z-index: 10;
   }
 
   &__form-text {
@@ -341,6 +344,14 @@ body {
 
 .designer {
   padding: 150px 0 210px;
+  position: relative;
+  &__img-decor{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -225px;
+    z-index: 5;
+  }
   &__inner {
     padding: 0 40px;
     display: flex;
@@ -355,6 +366,7 @@ body {
     @extend %lora-400;
     font-size: 45px;
     margin-bottom: 50px;
+    text-transform: uppercase;
   }
 
   &__text {
@@ -390,5 +402,57 @@ body {
     padding: 10px 90px;
     color: vars.$color-text-muted;
     border: 1px solid vars.$color-text-muted;
+  }
+}
+
+.advantages {
+  background-color: vars.$bg-primary;
+  &__wrapper {
+    padding: 64px 0 34px;
+    display: flex;
+    position: relative;
+  }
+
+  &__img{
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+  }
+
+  &__img-decor{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__inner {
+    margin-left: auto;
+    padding-right: 128px;
+  }
+
+  &__title {
+    @extend %lora-400;
+    font-size: 45px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    column-count: 2;
+    column-gap: 80px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    padding-left: 50px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 22px;
+      left: 0;
+      background-image: url(../images/advantages-items-decor.svg);
+    }
   }
 }
