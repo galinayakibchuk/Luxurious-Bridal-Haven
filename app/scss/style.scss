@@ -338,3 +338,57 @@ body {
     color: vars.$color-primary;
   }
 }
+
+.designer {
+  padding: 150px 0 210px;
+  &__inner {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 400px;
+  }
+
+  &__title {
+    @extend %lora-400;
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: vars.$color-text-muted;
+  }
+
+  &__box {
+    text-align: center;
+    position: relative;
+  }
+
+  &__img {
+    margin-bottom: 40px;
+  }
+
+  &__caption {
+    padding: 20px 18px;
+    width: 300px;
+    @extend %lora-400;
+    color: vars.$color-primary;
+    font-size: 20px;
+    border: 3px solid vars.$bg-primary;
+    position: absolute;
+    top: 180px;
+    left: -160px;
+    background-color: #fff;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 10px 90px;
+    color: vars.$color-text-muted;
+    border: 1px solid vars.$color-text-muted;
+  }
+}
